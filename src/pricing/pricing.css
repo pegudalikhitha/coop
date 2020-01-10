@@ -1,0 +1,62 @@
+
+.price{
+  margin-top: 70px;
+}
+.align{
+  margin-top: 100px;
+}
+/* h2{
+		 width: 80%;
+  margin:0 auto;
+  text-align: center;  
+    padding: 3rem;  
+   font: 20px/30px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+  }
+   */
+
+  .info{
+margin-left: 3px;
+   }
+
+	/* .btn.btn-info{
+    margin: 20px;
+   
+	} */
+	.btn.btn-info:hover{
+  background-color: black;
+  border:none;
+  border-color: none;
+  color:white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  #img6 {
+  background-color: white;
+  box-shadow: 0px 15px 15px 15px #E5E5E3;
+  }
+  .text-bright{
+    color:#33cccc;
+  }
+  #trialtodaytxt{
+    margin-top: 100px;
+  }
+  .primartxt,.secondtxt{
+    text-align: left;
+margin-left: 16%;
+}
+.primartxt{
+  font-size: 25px;
+}
+.thirdtxt{
+  font-size: 35px;
+  margin-top: 100px;
+}
+thead th{
+  background-color: blue;
+  color: white;
+}
+.table.table-striped{
+  text-align: 'center';
+ 
+}

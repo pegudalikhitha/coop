@@ -1,0 +1,22 @@
+.flex1,.flex2{
+	display: flex ;
+	flex-direction: row ;
+	z-index:0;
+}
+.icon{
+	padding: 30px;
+}
+h3 a{
+	color: black;
+
+}
+h3 a hover{
+	color:blue;
+}
+
+@media only screen and (max-width: 700px) {
+    .flex1 {
+		display: flex;
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,79 @@
+.ArticleCopy{
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  width: 80%;
+  margin:0 auto;
+  padding: 3rem;
+}
+
+.ArticleCopy blockquote {
+    border-radius: 3px;
+    position: relative;  /*  <--- */
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;  /* create space for the quotes */
+    color: #4a4a4a;
+    margin: 1rem auto 2rem;
+    color: #4a4a4a;
+    
+}
+h2{
+  
+  width: 80%;
+  margin:0 auto;
+  text-align: center;  
+    padding: 3rem;  
+   font: 20px/30px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+}
+  
+  
+/* .carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  background-color: #33cccc;
+  border:none;
+  }
+   */
+  .btn.btn-info:hover{
+  background-color: black;
+  border:none;
+  border-color: none;
+  color:white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .video {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding:40px;
+}
+.centered-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa.fa-play-circle-o{
+  color: white;
+  size: 50px;
+}
+
+.text-bright{
+color:#33cccc;
+}
+.textsoft{
+  margin-top: 150px;
+}
+.customtxt{
+  text-align: center;
+  font-size: 30px;
+}

@@ -1,0 +1,111 @@
+
+	.row.sameheight-container{
+        margin-top: 80px;
+    }
+
+    .demo-block{
+        margin-top: 60px;
+        background-color: lightseagreen;
+        width:  100%;
+        color: white;
+       
+        padding: 10px;
+    }
+    .pneed,.pnam{
+        text-align: left;
+        margin-left: 6%;
+    }
+
+    .pneed{
+        font-size: 30px;       
+    }
+    .pnam{
+        font-size: 18px;
+    }
+
+    .txt-leftalign{
+       
+        margin-top: 120px;
+
+    }
+    .primarytxt,.secondarytxt,.table_counter{
+        text-align: left;
+    margin-left: 16%;
+    }
+    .primarytxt{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .flex-container {
+        display: flex;
+        
+      }
+      
+      .flex-container > div {
+        /* background-color: #f1f1f1; */
+        margin: 10px;
+        padding: 10px;
+        
+      }
+      
+      #firstrow{
+      font-weight:bold;
+      font-size: 20px;
+      }
+      
+      .components{
+      width:140px;
+      }
+      
+      .Themes{
+      width:80px;
+      }
+      
+      .users{
+      width:100px;
+      }
+
+      /* purchase button styling*/
+      .btnpurchase{
+        border-radius: 200px;
+        background-color:teal;
+          border-color:#fff;
+          color: #fff;
+          width:180px;
+          height: 40px;
+          margin-left: 100px;
+          margin-top: 45px;
+          
+      }
+      .btnpurchase:hover{
+        background-color: black;
+        border:none;
+        border-color: none;
+        color:white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .trylink{
+             color:white;         
+             
+        }
+        
+        .trylink:hover{
+            color:black;
+        }
+        .flex-container-1 {
+            display: flex;
+            
+          }
+          .flex-container-1 > div {
+             /* background-color: brown;  */
+            margin: 10px;
+            /* padding: 10px; */
+            
+          }
+          .flextxt{
+              width: 800px;
+              
+          }
+          .margin-btn{
+              margin-top: 60px !important;
+          }
