@@ -18,7 +18,7 @@ class Footer extends React.Component {
   <div className="container">
     <div className= "text-center">
     <img src={Image} width="180" height="50" class="d-inline-block align-top" alt=""/>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p></div>
+    <p className="Duis">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p></div>
     <div className="row">
        	
     		

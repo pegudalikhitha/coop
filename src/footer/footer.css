@@ -1,6 +1,7 @@
 footer {
   background: #021116;  
   color: #d9dbdc;  
+  height: 60vh;
   
 }
 
@@ -14,7 +15,9 @@ footer a:hover {
   color: #FA944B;
   text-decoration: none;
 }
-
+.Duis{
+  padding-top: 15px;;
+}
 
 
 .footer-middle {

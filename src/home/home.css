@@ -22,7 +22,14 @@
     color: #fff;
     text-align: center;
 }
-
+.testrow {
+  display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    background-color: #21252966;
+    height: 88%;
+}
 #homebtn{
   margin-left: 35%;
   margin-top: 50px;

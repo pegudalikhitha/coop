@@ -2,9 +2,10 @@ import React from 'react';
 import './testimonals.css';
 import Image8 from '../images/img05.jpg'
 import Image9 from '../images/img04.png'
+import Image19 from '../images/video-play-48.jpg'
 import {ReactComponent as LArrow} from '../images/left-arrow.svg'
 import {ReactComponent as RArrow} from '../images/right-arrow.svg'
-import {ReactComponent as Playbtn} from '../images/play-button.svg'
+import {ReactComponent as Playbtn} from '../images/play.svg'
 
 class Testimonals extends React.Component{
 
@@ -105,11 +106,11 @@ class Testimonals extends React.Component{
 </div>
 
 <div className="video">
-<img src={Image8} alt="Snow"  className="img-responsive"  />
+<img src={Image8} alt="Snow"  id="img8" className="img-responsive"  />
 
 <div className="centered-play">
   <a href="http://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" >
-  <Playbtn height='40px'/></a></div>
+  <Playbtn height='50px'/></a></div>
 </div>
 </div>
 

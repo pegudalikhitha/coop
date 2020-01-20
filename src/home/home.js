@@ -9,12 +9,12 @@ class Home extends React.Component {
   return (
     	
   <div className="hom" >
-    
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 <a class="navbar-brand" href="#">
-    <img src={Image} width="180" height="50" class="d-inline-block align-top" alt=""/>
-   
+    <img src={Image} width="180" height="50" class="d-inline-block align-top" alt=""/> 
   </a>
+  
+  
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -44,7 +44,7 @@ class Home extends React.Component {
   </div>
 </nav>
 
-<div class="row">
+<div class="testrow">
     <div class="col-8" id="hometxt">
               
                 <div className="best">best software for your office</div><br/>

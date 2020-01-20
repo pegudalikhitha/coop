@@ -9,6 +9,9 @@ import Image14 from '../images/logo-4.jpg';
 import Image15 from '../images/logo-5.jpg';
 import Image16 from '../images/logo-6.jpg';
 
+import Image17 from '../images/checkmark-16.jpg'
+import Image18 from '../images/x-mark-16.jpg'
+
 class Pricing extends Component{
   constructor(props){
     super(props);
@@ -18,7 +21,7 @@ class Pricing extends Component{
            <div> <div class="price">
                 <div>
 <h2>Select your <span className="text-bright" >plan as your choise</span>, <br/>no need to pay extra money.</h2>
-
+<div className="tab1">
 <table className="table table-striped" >
   <thead >
     <tr>
@@ -36,34 +39,34 @@ class Pricing extends Component{
       <td ><strong>$15.99</strong>/mo<br/>Best for Big Team</td>
     </tr>
     <tr>
-      <td scope="row">1 User</td>
-      <td>1 User</td>
-      <td>20 User</td>
-      <td>1 User</td>
+      <td scope="row"><img src={Image17}alt="image description" className="img-responsive" />1 User</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />1 User</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />20 User</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />1 User</td>
     </tr>
     <tr>
-      <td scope="row">Admin Dashboard</td>
-      <td>Admin Dashboard</td>
-      <td>Admin Dashboard</td>
-      <td>Admin Dashboard</td>
+      <td scope="row"><img src={Image17}alt="image description" className="img-responsive" />Admin Dashboard</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />Admin Dashboard</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />Admin Dashboard</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />Admin Dashboard</td>
     </tr>
     <tr>
-      <td scope="row">Live Chat Service</td>
-      <td>Live Chat Service</td>
-      <td>Live Chat Service</td>
-      <td>Live Chat Service</td>
+      <td scope="row"><img src={Image18}alt="image description" className="img-responsive" />Live Chat Service</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />Live Chat Service</td>
+      <td><img src={Image18}alt="image description" className="img-responsive" />Live Chat Service</td>
+      <td><img src={Image18}alt="image description" className="img-responsive" />Live Chat Service</td>
     </tr>
     <tr>
-      <td scope="row">Special Offers</td>
-      <td>Special Offers</td>
-      <td>Special Offers</td>
-      <td>Special Offers</td>
+      <td scope="row"><img src={Image18}alt="image description" className="img-responsive" />Special Offers</td>
+      <td><img src={Image18}alt="image description" className="img-responsive" />Special Offers</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />Special Offers</td>
+      <td><img src={Image18}alt="image description" className="img-responsive" />Special Offers</td>
     </tr>
     <tr>
-      <td scope="row">Free Support</td>
-      <td>Free Support</td>
-      <td>Free Support</td>
-      <td>Free Support</td>
+      <td scope="row"><img src={Image17}alt="image description" className="img-responsive" />Free Support</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />Free Support</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />Free Support</td>
+      <td><img src={Image17}alt="image description" className="img-responsive" />Free Support</td>
     </tr>
     <tr>
       <td scope="row"> <a href="#" className="btn btn-info">GET STARTED NOW</a></td>
@@ -72,7 +75,7 @@ class Pricing extends Component{
       <td><a href="#" className="btn btn-info">GET STARTED NOW</a></td>
     </tr>
   </tbody>
-</table>
+</table></div>
 
 <div className="row"  id="trialtodaytxt" >
 					<div className="alignleft">

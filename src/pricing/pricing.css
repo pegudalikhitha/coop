@@ -60,3 +60,30 @@ thead th{
   text-align: 'center';
  
 }
+
+table {
+  overflow: hidden;
+  
+}
+.tab1{
+  padding: 100px;
+}
+
+/* tr:hover, th:hover {
+  background-color:aqua;
+} */
+
+td, th {
+  position: relative;
+}
+td:hover::after,
+th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: aqua;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
