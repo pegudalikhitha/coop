@@ -1,69 +1,95 @@
-.hom{
+.main {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hom {
   background-image: url(../images/img07.jpg);
   background-size: cover;
   height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #fff;  
 
 }
 
-.nav-link{
-  color:white;
-}
-.nav-link:hover{
-  color:whitesmoke;
-}
-.btn2 {
-    border-radius: 200px;
-    border-color:#fff;
-    width:180px;
-    height: 60px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
+/* .logo{
+  margin-left: 92px;
+} */
+
+
+.testrow {
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color:#212529c4;
+  min-height: 100%;
 }
 
-#homebtn{
+#homebtn {
   margin-left: 35%;
   margin-top: 50px;
 }
-.btn1{
-  border-radius: 200px;
-  background-color: black;
-    border-color:#fff;
-    color: #fff;
-    width:180px;
-    height: 40px;
+.btn2{
+  border-radius: 99px;
+  border-color: #fff;  
+  background:none;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px; 
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
- .btn1:hover,.btn2:hover{
+.btn2 { 
+  font-size: 15px;
+  line-height: 20px;  
+  padding: 14px;
+  font-weight: 600;  
+  margin: 0px 15px 0px 0px;
+}
+
+/* .btn1 {  
+  font-size: 13px;
+  margin:0px 92px 0px 20px;
+  padding: 10px 15px;
+  line-height: 16px;
+  min-width: 120px;  
+} */
+
+ .btn2:hover {
   background-color: black;
-  border:none;
+  border: none;
   border-color: none;
-  color:white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
-  #hometxt{
-    margin-top: 120px;
-  }
+#hometxt {
+  margin-top: 200px;
+}
 
-  .best,.Try,.p1{
-    text-align: left;
-    margin-left: 35%;
-    
-  }
+.txt-small, .Try, .p1 {
+  text-align: left;
+  margin-left: 35%;
+  letter-spacing: 1px;
+}
 
-  .best{
-    font-size: 30px;
-  }
-  .p1{
-    font-size: 18px;
-  }
+.txt-small {
+  font-size: 17px;
+  /* padding: 0px 0px 16px 0px; */
+  font-weight: 300;
+}
 
-  .Try{
-    font-size:50px;
-    font-weight: bolder;
-  }
+.p1 {
+  font-size: 14px;
+  font-weight: 300; 
+}
 
- 
+.Try {
+  font-size: 35px;
+  text-transform: uppercase; 
+  line-height: 37px;
+  font-weight: 700;
+  font: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

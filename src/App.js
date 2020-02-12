@@ -2,22 +2,24 @@ import React from 'react';
 import Home from './home/home.js';
 import Features from './features/features.js';
 import About from './about/about.js';
-import Testimonals from './testimonals/testimonals.js';
+import Testimonials from './testimonals/testimonials.js';
 import Pricing from './pricing/pricing.js';
-import Footer from './footer/footer.js';
+
+import Header from './header';
 import './App.css';
+
+
 
 function App() {
   return (
     <div className="App">
-    {/* <div> */}
-      <Home />
-      <Features />
-      <About />
-      <Testimonals/>
+      <Header/>
+      <Home/>
+      <Features/>
+      <About/>
+      <Testimonials/>
       <Pricing/>
-      <Footer/>
-      {/* </div>   */}
+      
     </div>
   );
 }

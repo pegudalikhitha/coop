@@ -1,7 +1,11 @@
+.main {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 footer {
-  background: #021116;  
-  color: #d9dbdc;  
-  
+  background: #021116;
+  color: #d9dbdc;
+  min-height: 60vh;
 }
 
 footer a {
@@ -10,27 +14,44 @@ footer a {
   transition-duration: 0.2s;
 }
 
+.text-span {
+  color: #222222;
+  font-size: 15pxs;
+}
+
 footer a:hover {
-  color: #FA944B;
+  color: blue;
   text-decoration: none;
 }
 
+.footer_txt {
+  padding-top: 15px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #d9dbdc;
+}
 
+.copyright {
+  color: #d9dbdc;
+}
 
 .footer-middle {
   padding-top: 2em;
-  color: white;
+  /* color: white; */
 }
-
 
 /*SOCİAL İCONS*/
 
 /* footer social icons */
 
+.icons {
+  padding-bottom: 19px;
+}
+
 ul.social-network {
   list-style: none;
   display: inline;
-  margin-left: 480px !important;
+  /* margin-left: 480px !important; */
   padding: 0;
 }
 
@@ -38,7 +59,6 @@ ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
-
 
 /* footer social icons */
 
@@ -53,19 +73,16 @@ ul.social-network li {
 .social-network a.icopinterest:hover {
   background-color: red;
 }
+
 .social-network a.icotwitter:hover {
   background-color: #00b8e6;
 }
 
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i ,
-.social-network a.icopinterest:hover i,
-.social-network a.icotwitter:hover i{
+.social-network a.icoFacebook:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icopinterest:hover i, .social-network a.icotwitter:hover i {
   color: #fff;
 }
 
-.social-network a.socialIcon:hover,
-.socialHoverClass {
+.social-network a.socialIcon:hover, .socialHoverClass {
   color: #44BCDD;
 }
 
@@ -99,4 +116,11 @@ ul.social-network li {
 
 .social-network a {
   background-color: #F9F9F9;
+}
+
+@media screen and (max-width: 1000px) {
+  .links, .social, .copyright {
+    float: none;
+    text-align: center;
+  }
 }
