@@ -26,18 +26,21 @@ footer a:hover {
 
 .footer_txt {
   padding-top: 15px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   color: #d9dbdc;
+  line-height: 28px;
 }
 
 .copyright {
   color: #d9dbdc;
+  font-size: 14px;
 }
 
-.footer-middle {
-  padding-top: 2em;
-  /* color: white; */
+.text-center {
+  padding-top: 77px;
+ 
+  
 }
 
 /*SOCİAL İCONS*/
@@ -66,8 +69,8 @@ ul.social-network li {
   background-color: #3B5998;
 }
 
-.social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
+.social-network a.icogoogle:hover {
+  background: #dd4b39;
 }
 
 .social-network a.icopinterest:hover {
@@ -78,7 +81,7 @@ ul.social-network li {
   background-color: #00b8e6;
 }
 
-.social-network a.icoFacebook:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icopinterest:hover i, .social-network a.icotwitter:hover i {
+.social-network a.icoFacebook:hover i, .social-network a.icogoogle:hover i, .social-network a.icopinterest:hover i, .social-network a.icotwitter:hover i {
   color: #fff;
 }
 
@@ -106,7 +109,7 @@ ul.social-network li {
 }
 
 .social-circle i {
-  color: #595959;
+  /* color: #595959; */
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   -o-transition: all 0.8s;
@@ -115,7 +118,7 @@ ul.social-network li {
 }
 
 .social-network a {
-  background-color: #F9F9F9;
+  background-color: rgb(8, 44, 56);
 }
 
 @media screen and (max-width: 1000px) {

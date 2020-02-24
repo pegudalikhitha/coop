@@ -1,14 +1,3 @@
-nav.activestroke{
-  background-color:white;
-  box-shadow: 0px 6px 0px #dedede;
-  width: 100%;
-  min-height: fit-content;
-  margin: 0 auto;
-  position:fixed;
-  padding: 8px 0px 8px 0px;
-  transition: white 0.4s ease-out;
-  z-index: 1000;
-}
 nav.inactivestroke{
   background-color:transparent;
   color:black;
@@ -19,111 +8,118 @@ nav.inactivestroke{
   padding: 30px 0;
   transition: white 0.4s ease-out;
 }
+nav.activestroke{
+  background-color:white;
+  box-shadow: 0 0 11px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto !important;
+  margin: 0 auto;
+  position:fixed;
+  /* padding: 8px 0px 8px 0px; */
+  transition: white 0.4s ease-out;
+  z-index: 1000;
+}
+
 .logo_nav{
     float: left !important;
     margin-left: 1px;
     padding-left: 0;
 }
 
+/*--------- NAVIGATION styling ------- */
+nav#stroke  ul {
+  list-style: none;   
+}
+nav#stroke  ul li {
+  /* display: inline-block; */
+  float:right;
+}
+nav#stroke ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;    
+  text-transform: uppercase;  
+  letter-spacing: 1px;  
+  line-height: 17px;  
+}
+nav#stroke  ul li a.inactive_nav-link {    
+  margin: 0 0px 0px 26px;
+  padding:10px 0px 20px 0px;    
+  color:white;
+}    
+nav#stroke  ul li a.active_nav-link {     
+  margin: 0 0px 0px 26px;
+  padding:10px 0px 10px 0px; 
+  color: #555;
+}  
+
+nav#stroke  ul li a,
+nav#stroke ul li a:after,
+nav#stroke  ul li a:before {
+  transition: all .5s;    
+}
+nav#stroke  ul li a:hover {
+  color: #555;
+}   
+
+/*---- stroke styling ------- */
+nav#stroke ul li a{
+  position: relative;
+}
+nav#stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  color: transparent;
+  /* background: #fff; */
+  height: 1.5px;
+}
+nav#stroke ul li a.inactive_nav-link:after{
+  background: white;
+}
+nav#stroke ul li a.active_nav-link:after{
+  background: black;
+}
+nav#stroke ul li a:hover:after {
+  width: 100%;
+}
+
+/*------ nav-bar button styling -------*/
+
   #btn1{
-    border-radius: 99px;    
-    background:none;    
+    cursor: pointer;
+    border-radius: 99px;      
+    font-size: 13px;
+    font-weight: 400;  
+    line-height: 16px;  
+    padding:10px 15px;
+    margin:0px 0px 8px 35px;
+    min-width: 150px; 
     text-align: center;
     letter-spacing: 1px; 
     text-transform: uppercase;
-    cursor: pointer;
-    font-size: 13px;
-    min-width: 120px;  
-    padding: 10px 15px;
-    margin:0px 92px 8px 35px;   
-    line-height: 16px;   
+    background: none;  
   }
   .inactivebtn1{
-    border-color: #fff; 
+    border: 2px solid #fff ; 
     color: #fff;
   }
   .activebtn1{
-    border-color: black;
+    border:2px solid #222222;
     color: black;
-  }
-  
+  }  
   #btn1:hover{
-    background-color: black;
-    border: none;
-    border-color: none;
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #222222;
+  border: 2px solid #222222;
+  color: white;
+ 
+  transition:0.3s;
   }
   
-/* NAVIGATION */
-  nav#stroke  ul {
-    list-style: none;
-   
-  }
-  nav#stroke  ul li {
-    /* display: inline-block; */
-    float:right;
-  }
-  nav#stroke ul li a {
-    display: block;
-    text-decoration: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0 10px;
-    
-  }
-  
-  nav#stroke  ul li a,
-  nav#stroke ul li a:after,
-  nav#stroke  ul li a:before {
-    transition: all .5s;
-    
-  }
-  nav#stroke  ul li a:hover {
-    color: #555;
-  }  
-  nav#stroke  ul li a.active_nav-link {  
-    font-size: 13px;
-    line-height: 28px;
-    letter-spacing: 1px;
-    padding:  10px 0px 0px 0px;
-    margin: 0px 0px 0px 15px;
-    text-transform: uppercase;   
-    color: #555;
-  }  
-  nav#stroke  ul li a.inactive_nav-link { 
-    font-size: 13px;
-    line-height: 28px;
-    letter-spacing: 1px;
-    padding: 10px 0px 0px;
-    margin: 0px 0px 0px 15px;
-    text-transform: uppercase;     
-    color:white;
-  }    
-  
-  /* stroke */
-  nav#stroke ul li a{
-    position: relative;
-  }
-  nav#stroke ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '';
-    color: transparent;
-    /* background: #fff; */
-    height: 1.5px;
-  }
-  nav#stroke ul li a.inactive_nav-link:after{
-    background: white;
-  }
-  nav#stroke ul li a.active_nav-link:after{
-    background: black;
-  }
-  nav#stroke ul li a:hover:after {
-    width: 100%;
-  }
+
   

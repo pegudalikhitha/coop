@@ -22,10 +22,10 @@ class Header extends React.Component {
 
     render() {
         return (            
-            <div className="head">
-                 <div className={this.state.color === 'inactive' ? "inactiveheaderDiv" : "activeheaderDiv"}></div>
-                <nav  id="stroke" className={this.state.color === 'inactive' ? "inactivestroke" : "activestroke"}>
+        
 
+                  <nav  id="stroke" className={this.state.color === 'inactive' ? "inactivestroke" : "activestroke"}>
+                     <div className="container">
                     <ul>
                     {this.state.color === 'inactive' ?  <img src={Image} width="150" height="40" class="logo_nav" alt="logo" /> :  <img src={Image_active} width="150" height="40" class="logo_nav" alt="logo" />}
                        
@@ -37,9 +37,9 @@ class Header extends React.Component {
                         <li><a href="#Home" className={this.state.color === 'inactive' ? "inactive_nav-link" : "active_nav-link"} >Home</a></li>
                     </ul>
 
-               
+               </div>
                 </nav>
-            </div>
+            
 
 
         );

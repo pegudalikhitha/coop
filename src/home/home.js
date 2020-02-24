@@ -7,24 +7,27 @@ import './home.css';
 class Home extends React.Component {
   render() {
     return (
-      <div className="main" >
-        
-          <div className="hom" >
+      <div className="main" id="Home">
 
-            <div class="testrow">
-              <div class="col-8" id="hometxt">
+        <div className="hom" >
 
-                <div className="txt-small">best software for your office</div><br />
-                <h1 className="Try">Try Cooper Today!</h1><br />
-                <p className="p1">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy <br />nibh euismod tincidunt ut laoreet dolore magna aliquam erat<br /> volutpat.</p>
+          <div class="testrow">
+            <div className="container">
+            
+              <div class="heading-holder col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" id="hero_banner">
+
+                <div className="txt-small">best software for your office</div>
+                <div className="highlighting_heading">Try Cooper Today!</div>
+                <div className="short_desc">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
 
                 <div class="row" id="homebtn">
                   <button type="submit" className="btn2">Learn More</button>
-                  <button href="#" type="submit" className="btn2">Download</button></div>
+                  <button href="#" type="submit" className="btn3">Download</button>
+                </div>
               </div>
             </div>
           </div>
-        
+        </div>
       </div>
     );
   }
