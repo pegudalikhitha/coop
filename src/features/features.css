@@ -1,3 +1,24 @@
+.main {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.features-area_container {
+	padding:59px 15px 22px 15px;
+}
+.header h2 {
+	text-align: 'center';
+	padding: '30px';
+	font-size: 28px;
+	color: #222222;
+	font-weight: 400;
+	line-height: 38px;
+	margin-bottom: 76px;
+	letter-spacing: 1px;
+}
+
+.text-bright {
+	color: #009bde;
+}
+
 .flex-container1 {
 	display: flex;
 	flex-wrap: wrap;
@@ -8,7 +29,6 @@
 .flex-container1>div {
 	width: 350px;
 	justify-content: space-between;
-	/* margin-right: 2px; */
 	text-align: center;
 	line-height: 75px;
 	font-size: 30px;
@@ -17,26 +37,6 @@
 .mini-flex {
 	display: flex;
 }
-
-.main {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.features-area_container {
-	margin: 80px 92px 0px 92px;
-}
-
-.header h2 {
-	text-align: 'center';
-	padding: '30px';
-	font-size: 25px;
-	color: #222222;
-}
-
-.text-bright {
-	color: #009bde;
-}
-
 .icon {
 	padding: 0px 20px 30px 0px;
 }
@@ -52,6 +52,7 @@ h3 a {
 	letter-spacing: 1px;
 	font-weight: 600;
 	text-align: left;
+	line-height: 20px;
 }
 
 h3 a:hover {
@@ -65,6 +66,6 @@ figcaption p {
 	font-size: 14px;
 	text-align: left;
 	margin-bottom: 30px;
-	line-height: 28px;
+	line-height: 24px;
 	letter-spacing: 1px;
 }

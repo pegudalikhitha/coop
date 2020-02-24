@@ -1,56 +1,6 @@
 .main {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.banner{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-@media only screen and (max-width: 600px){
-  .banner{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.img10-responsive{
-  height: auto;
-  width: 100%;
-}
-
-.price {
-  margin-top: 70px;
-}
-
-.align {
-  margin-top: 100px;
-}
-.btn-p {
-  border-radius: 99px;
-  background: #009bde;
-  border-color: #fff;
-  color: #fff;
-  font-weight: inherit;
-  font-size: 13px;
-  text-transform: uppercase;
-  padding: 14px 40px 14px 40px;
-}
-
-.btn-p:hover {
-  background-color: black;
-  text-decoration: none;
-  border: none;
-  border-color: none;
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-#img6 {
-  background-color: white;
-  box-shadow: 0px 15px 15px 15px #E5E5E3;
-}
 
 .text-bright {
   color: #009bde;
@@ -63,37 +13,6 @@
   color: #222222;
   font-weight: 300;
 }
-
-#trialtodaytxt {
-  margin-top: 100px;
-}
-
-.primary_block_txt, .second_block_txt, .info {
-  text-align: left;
-  margin-left: 16%;
-  letter-spacing: 1px;
-}
-
-.primary_block_txt {
-  font-size: 28px;
-}
-
-.second_block_txt {
-  font-weight: 300;
-  color: #51595b;
-  font-size: 14px;
-  text-align: left;
-  margin-bottom: 30px;
-  line-height: 28px;
-  letter-spacing: 1px;
-  line-height: 30px;
-}
-
-.thirdtxt {
-  font-size: 35px;
-  margin-top: 100px;
-}
-
 /* ---------table styling------------------ */
 ul.table-form{
   padding-left: 0px ;
@@ -114,23 +33,62 @@ ul.table-form{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  /* margin: 50px 100px; */
- 
+  /* margin: 50px 100px; */ 
 }
-
 .price-col-first,   .price-col-fourth {
   border-right: 1px solid black;
-  width:300px;
+  width:270px;
   border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .price-col-second{
   border-bottom: 1px solid black;
-  width:300px;
+  width:270px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-
+.price-col-third{
+  background-color:#009bde;
+  width: 270px;   
+}
 .price-col-first {
   border-left: 1px solid black;
+}
+/* media queries for table */
+
+@media only screen and (max-width:990px) {
+  .price-col-second{
+    border-right: 1px solid black;
+    width:330px !important;
+    
+  }
+  .price-col-third{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .price-col-first, .price-col-fourth ,.price-col-third{
+    width:330px !important;  
+  }
+  .start{
+    padding: 8px 15px 7px;
+  } 
+  .tab1{
+    padding:20px 30px;
+  }
+  .cols-holder{
+    margin:0px;
+  }
+}
+
+@media only screen and (max-width:770px) {
+  .price-col-second, .price-col-fourth{
+    border-left: 1px solid black;
+  }
+  .price-col-first, .price-col-second,.price-col-third,.price-col-fourth {
+    width:480px !important;  
+  }
 }
 
 .title {
@@ -142,6 +100,17 @@ ul.table-form{
   background-color: #009bde;
   display: block;
   padding: 8px 15px 7px;
+  letter-spacing: 1px;
+}
+.start{    
+  /* padding: 8px 15px 7px; */
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px; 
+  background-color: #009bde;
+  display: block;
   letter-spacing: 1px;
 }
 
@@ -206,51 +175,29 @@ ul.table-form li {
   text-decoration: none;
 }
 
-ul.table-form li.check:before {  
-  background: url(../images/checkmark-16.jpg);
-  background-repeat: no-repeat;
- 
+.whitecheck{
+ color:white;
+ font:400;
+ font-size: 14px;
+ padding-right: 10px;
 }
-ul.table-form li.white-check:before{
-  background: url(../images/check-mark-16.png);
-  /* background-repeat: no-repeat; */
+.green-check{
+  color:#2ecc71;
+  font:400;
+  font-size: 14px;
+  padding-right: 10px;
+}
 
+.fa-close{
+  color: #f3746f;
+  font: 400;
+  font-size: 17px;
+  padding-right: 10px;
 }
-ul.table-form li.white-check:before,ul.table-form li.check:before, ul.table-form li.un-check:before{
-  content: '';  
-  position: absolute;
-  left: 0; 
-  width: 5em;
-  height: 5em;
-  margin-left: 5px;
-  background-repeat: no-repeat;  
- }
-ul.table-form li.un-check:before {  
-  background: url(../images/x-mark-16.jpg);
-  background-repeat: no-repeat;
-  
- }
 
- /* active column */
 
- .price-col-third{
-  background-color:#009bde;
-  width: 300px;
-  
-  
-}
-.start{
-  padding: 15px 110px 7px 110px;  
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-align: center;
-  font-size: 16px;
-  margin-bottom: 12px;
-  background-color: #009bde;
-  /* display: block; */
-  letter-spacing: 1px;
-}
+ /* active column */ 
+
 .btn_tabh{
   background-color: #002D40;
   padding: 13px 15px;
@@ -267,6 +214,108 @@ li#hover{
 #hover{
   color: white;
 }
+.price {
+  margin-top: 70px;
+}
 
+/*------------------ banner styling---------- */
+.banner{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 71px;
+}
+
+/* @media (min-width: 768px){
+.col-sm-6 {
+    width: 50% !important;
+}
+} */
+
+@media only screen and (max-width: 770px){
+  .banner{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .img10-responsive{
+    margin-left:10%;
+    
+  }
+  .col-sm-6{
+    width: 100% !important;;
+  }
+}
+
+
+.align{
+  padding: 50px;
+}
+
+.btn-t {
+  cursor: pointer;
+  border-radius: 99px;  
+  line-height: 20px;  
+  min-width: 150px;
+  text-align: center;
+  letter-spacing: 1px; 
+  text-transform: uppercase;
+  color: white;  
+  background: #009bde;  
+  font-weight: inherit;
+  font-size: 13px;  
+  padding: 14px 40px 14px 40px;
+}
+
+.btn-t:hover {
+  background-color: #222222;;
+  border: none;
+  text-decoration: none;
+  color: white;
+  border-color: none;
+  transition: all 0.25s;
+  transition-timing-function: linear;
+}
+
+.primary_block_txt, .second_block_txt, .info {
+  text-align: left;
+  /* margin-left: 16%; */
+  letter-spacing: 1px;
+}
+
+.primary_block_txt {
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 36px;
+}
+
+.second_block_txt {
+  font-weight: 300;
+  color: #666;
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 52px;
+  line-height: 28px;
+  letter-spacing: 0.6px;
+  line-height: 32px;
+}
+
+.thirdtxt {
+  font-size: 35px;
+  margin-top: 100px;
+}
+
+.img10-responsive{
+  height: auto;
+  width: 100%; 
+  background-color: white;
+  box-shadow: 0px 15px 15px 15px #E5E5E3;
+  float:left;
+  margin-left: -120px;
+ 
+}
+
+/* media queries */
 
 

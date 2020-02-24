@@ -1,0 +1,10 @@
+
+.icon-props{
+    color: white !important;
+    cursor: pointer;
+    font-size: 58px;
+}
+.icon-props:hover{
+    color: #009bde !important;
+    cursor: pointer;
+}
