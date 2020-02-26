@@ -17,7 +17,7 @@ class Features extends Component {
 				<div className="container">
 					<section className="features-area_container" data-scroll-index="1" >
 
-						<div className="header" >
+						<div className="header">
 							<h2>Best software to manage
 							<br />
 								your office <span className="text-bright" >work and workers!</span></h2>

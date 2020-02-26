@@ -27,7 +27,7 @@
 }
 
 .flex-container1>div {
-	width: 350px;
+	width: 33%;
 	justify-content: space-between;
 	text-align: center;
 	line-height: 75px;
@@ -68,4 +68,21 @@ figcaption p {
 	margin-bottom: 30px;
 	line-height: 24px;
 	letter-spacing: 1px;
+}
+
+/* media queries */
+@media only screen and (max-width:768px){
+	.flex-container1>div {
+		width: 50%;
+	justify-content: space-between;
+	}
+	.features-area_container {
+		padding:59px 0px 22px 0px;
+	}
+}
+@media only screen and (max-width:640px){
+	.flex-container1>div {
+		width: 100%;
+	justify-content: space-between;
+	}
 }

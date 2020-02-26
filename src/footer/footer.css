@@ -80,8 +80,11 @@ ul.social-network li {
 .social-network a.icotwitter:hover {
   background-color: #00b8e6;
 }
+.social-network a.icoinstagram:hover {
+  background-color:#125688;
+}
 
-.social-network a.icoFacebook:hover i, .social-network a.icogoogle:hover i, .social-network a.icopinterest:hover i, .social-network a.icotwitter:hover i {
+.social-network a.icoFacebook:hover i, .social-network a.icogoogle:hover i, .social-network a.icopinterest:hover i, .social-network a.icotwitter:hover i,.social-network a.icoinstagram:hover i {
   color: #fff;
 }
 

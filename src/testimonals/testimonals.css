@@ -28,6 +28,10 @@
 .carousel-control-next,.carousel-control-prev{
   opacity: 1.5 !important;
 }
+.carousel-item.active{
+  margin-right: 0px !important;
+  margin-left: 100px !important;
+}
 .ArticleCopy blockquote {
   border-radius: 3px;
   position: relative;  
@@ -35,8 +39,8 @@
   padding: 1rem 1.2rem;
   width: 80%;
   color: #4a4a4a;
-  margin: 1rem auto 2rem;
-  color: #4a4a4a;
+  /* margin: 1rem auto 2rem; */
+  
 }
 .desc_slideshow{
   color:#828282;

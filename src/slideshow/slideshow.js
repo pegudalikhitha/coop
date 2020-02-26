@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Slider from 'react-slick';
-import './slideshow.css';
 
 import Image11 from '../images/logo-1.jpg';
 import Image12 from '../images/logo-2.jpg';
@@ -8,6 +7,7 @@ import Image13 from '../images/logo-3.jpg';
 import Image14 from '../images/logo-4.jpg';
 import Image15 from '../images/logo-5.jpg';
 import Image16 from '../images/logo-6.jpg';
+import './slideshow.css'
 
 
 export default class AutoPlay extends Component {  
@@ -15,7 +15,7 @@ export default class AutoPlay extends Component {
       const settings = {
         // dots: true,
         infinite: true,
-        centerMode: true,
+        // centerMode: linear,
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
@@ -25,7 +25,7 @@ export default class AutoPlay extends Component {
         // cssEase: "linear",      
       responsive: [
         {
-          breakpoint: 900,
+          breakpoint: 992,
           settings: {
               slidesToShow: 5,
               slidesToScroll: 1,
@@ -39,14 +39,14 @@ export default class AutoPlay extends Component {
             }
         },
         {
-            breakpoint: 760,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
             }
         },
         {
-            breakpoint: 550,
+            breakpoint: 575,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
@@ -58,8 +58,10 @@ export default class AutoPlay extends Component {
       return (
         <div className="slideshow">
          <div className="container">   
-            <Slider {...settings}>
-            <div className="slide-icon">             
+            <Slider 
+            {...settings}
+            >
+            <div className="slide-icon">        
               <img src={Image11}alt="description" className="img-margin" />
             </div>
             <div className="slide-icon">

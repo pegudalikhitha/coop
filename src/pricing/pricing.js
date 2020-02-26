@@ -101,12 +101,12 @@ class Pricing extends Component {
 
 					<div className="">
 						<div className="banner" id="trialtodaytxt" >
-							<div className="col-xs-12 col-sm-6">
+							<div className="col-xs-12 col-sm-12 col-md-6">
 								<div className="alignleft">
 									<img src={Image10} alt=" description" className="img10-responsive" />
 								</div>
 							</div>
-							<div className="col-xs-12 col-sm-6">
+							<div className="col-xs-12 col-sm-12 col-md-6">
 								<div className="align">
 									<div className="heading-wrap">
 										<p className="primary_block_txt">Try our free trial today. If you don’t like, you can cancel it anytime!</p>

@@ -8,13 +8,14 @@ import Pricing from './pricing/pricing.js';
 import Header from './header';
 import Scroll from './scroll';
 import './App.css';
+import Change_opener from './change _opener/change.js';
 
 
 
 function App() {
   return (
     <div className="App">
-     
+     <Change_opener/>
        <Scroll/>
       <Header/>
       <Home/>

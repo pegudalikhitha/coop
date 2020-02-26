@@ -1,11 +1,11 @@
 nav.inactivestroke{
   background-color:transparent;
-  color:black;
   width: 100%;
+  padding-top: 3%;
   min-height: fit-content;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   position:fixed;
-  padding: 30px 0;
+  /* padding: 30px 0; */
   transition: white 0.4s ease-out;
 }
 nav.activestroke{
@@ -13,81 +13,88 @@ nav.activestroke{
   box-shadow: 0 0 11px 2px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: auto !important;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   position:fixed;
   /* padding: 8px 0px 8px 0px; */
   transition: white 0.4s ease-out;
   z-index: 1000;
 }
 
-.logo_nav{
-    float: left !important;
-    margin-left: 1px;
-    padding-left: 0;
-}
-
 /*--------- NAVIGATION styling ------- */
-nav#stroke  ul {
-  list-style: none;   
+.tog{
+  display: flex;
+  flex-direction: row;
+  
 }
-nav#stroke  ul li {
-  /* display: inline-block; */
-  float:right;
-}
-nav#stroke ul li a {
+ 
+.inactive_t .nav-link{
+  color: #fff !important;
+  margin: 0px 0px 0px 26px;
+  padding:10px 0px 10px 0px; 
+  font-size: 13px;
+  font-weight: 400;    
+  text-transform: uppercase;  
+  letter-spacing: 1px;  
+  line-height: 17px;  
   display: block;
-  text-decoration: none;
+}
+.active_t .nav-link{
+  color: #555 ;
+  display: block;
+  margin: 0px 0px 0px 26px;
+  padding:10px 0px 10px 0px; 
   font-size: 13px;
   font-weight: 400;    
   text-transform: uppercase;  
   letter-spacing: 1px;  
   line-height: 17px;  
 }
-nav#stroke  ul li a.inactive_nav-link {    
-  margin: 0 0px 0px 26px;
-  padding:10px 0px 20px 0px;    
-  color:white;
-}    
-nav#stroke  ul li a.active_nav-link {     
-  margin: 0 0px 0px 26px;
-  padding:10px 0px 10px 0px; 
-  color: #555;
-}  
-
-nav#stroke  ul li a,
-nav#stroke ul li a:after,
-nav#stroke  ul li a:before {
-  transition: all .5s;    
+.active_t .nav-link:hover{
+  color:#555 ;
 }
-nav#stroke  ul li a:hover {
-  color: #555;
-}   
+.inactive_t .nav-link:hover{
+  color:black !important;
+  /* border-bottom: 1px solid blue; */
+}
 
 /*---- stroke styling ------- */
-nav#stroke ul li a{
-  position: relative;
+.decoration{
+  padding-bottom: 20px;
 }
-nav#stroke ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '';
-  color: transparent;
-  /* background: #fff; */
-  height: 1.5px;
+.decoration:hover{
+  border-bottom: 2px solid white;  
+  transition-timing-function: ease-in-out;
+  
 }
-nav#stroke ul li a.inactive_nav-link:after{
-  background: white;
+.decoration::before,
+.decoration::after{
+    transform-origin: center;
 }
-nav#stroke ul li a.active_nav-link:after{
-  background: black;
+.decoration::before{
+  transform: scale3d(0,1,1);
 }
-nav#stroke ul li a:hover:after {
-  width: 100%;
+.decoration::after { 
+  transform: scale3d(1,0,1); 
+  transition: width .5s ease, background-color .5s ease
 }
+.decoration:hover::before,
+  .decoration:hover::after {
+    transform: scale3d(1,1,1); 
+    transition:  0.5s;
+  }
+  /* li.nav-item:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+  li.nav-item:hover:after {
+    width: 100%;
+    background: blue;
+  } */
 
 /*------ nav-bar button styling -------*/
 
@@ -116,10 +123,35 @@ nav#stroke ul li a:hover:after {
   #btn1:hover{
   background-color: #222222;
   border: 2px solid #222222;
-  color: white;
- 
+  color: white; 
   transition:0.3s;
   }
   
 
-  
+  @media only screen and (max-width:900px){
+    .decoration{
+      padding-bottom: 0px;
+    }
+    .decoration:hover{
+      border-bottom: none;  
+    }
+  }
+
+  @media only screen and (max-width:600px){
+    #btn1{
+      min-width: 60px; 
+      font-size: 11px;
+    }
+    .navbar-toggler{
+        min-width: 8px;
+    }
+    .navbar-toggler-icon{
+      font-size: 16px;
+    }
+    .image-brand{
+      width:100px;
+      height: 30px;
+    }
+
+    
+  }

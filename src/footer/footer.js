@@ -27,7 +27,7 @@ class Footer extends React.Component {
                   <li><a href="/i" className="icotwitter" title="twitter"><i className="fa fa-twitter"></i></a></li>
                   <li><a href="/i" className="icogoogle" title="Linkedin"><i className="fa fa-google"></i></a></li>
                   <li><a href="/i" className="icopinterest" title="pinterest"><i className="fa fa-pinterest"></i></a></li>
-                  <li><a href="/i" className="icotwitter" title="twitter"><i className="fa fa-twitter"></i></a></li>
+                  <li><a href="/i" className="icoinstagram" title="twitter"><i className="fa fa-instagram"></i></a></li>
                 </ul>
 
               </div>
